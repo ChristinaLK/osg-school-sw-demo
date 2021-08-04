@@ -11,7 +11,7 @@ log = job.strings.log
 
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
-transfer_input_files = simple.R, setup.txt
+transfer_input_files = simple.R, setup.strings.txt, stringr_deps.tar.gz, http://proxy.chtc.wisc.edu/SQUID/chtc/R402.tar.gz
 
 request_cpus = 1
 request_memory = 1GB

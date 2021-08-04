@@ -1,3 +1,2 @@
-export PS1='My Computer [\W]$ '
 export PS1='Execute Node [\W]$ '
 export RHOME=$PWD/R
