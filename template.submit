@@ -4,7 +4,7 @@
 universe = container
 container_image = docker://rocker/tidyverse:latest
 
-#executable = 
+executable = run_r.sh
 #arguments = 
 
 should_transfer_files = YES
