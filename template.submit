@@ -1,20 +1,22 @@
 # template.sub
 # starter submit file for CHTC jobs
 
-universe = vanilla
-log = job.log
-#error = job_$(Cluster)_$(Process).err
-#output = job_$(Cluster)_$(Process).out
+universe = container
+container_image = docker://rocker/tidyverse:latest
 
 #executable = 
 #arguments = 
 
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
-transfer_input_files = simple.R, setup.simple.txt
+transfer_input_files = simple.R, strings.R, setup.remote.txt
 
 request_cpus = 1
 request_memory = 1GB
 request_disk = 1GB
+
+log = job_$(Cluster).log
+#error = job_$(Cluster)_$(Process).err
+#output = job_$(Cluster)_$(Process).out
 
 queue 1
