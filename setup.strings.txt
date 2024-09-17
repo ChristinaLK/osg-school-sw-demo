@@ -1,5 +1,0 @@
-export PS1='Execute Node [\W]$ '
-export RHOME=$PWD/R
-export PATH=$PWD/R/bin:$PATH
-tar -xzf R402.tar.gz
-tar -xzf stringr_deps.tar.gz
