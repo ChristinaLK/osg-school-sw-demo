@@ -13,7 +13,7 @@ transfer_input_files = simple.R, strings.R, setup.remote.txt
 
 request_cpus = 1
 request_memory = 1GB
-request_disk = 1GB
+request_disk = 2GB
 
 log = job_$(Cluster).log
 #error = job_$(Cluster)_$(Process).err
